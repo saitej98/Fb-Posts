@@ -4,7 +4,9 @@ import { Show } from './Components/PostShow/PostShow';
 function App() {
   return (
     <div className="App">
-       <Show />
+
+      <Show />
+      
     </div>
   );
 }
