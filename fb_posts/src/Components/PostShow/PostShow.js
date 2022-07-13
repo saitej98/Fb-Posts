@@ -7,14 +7,12 @@ export const Show = () => {
   const { post } = useContext(PostContext);
   return (
     <>
-      <div className="container page">
+      <div>
         <CreatePostCard />
         {post?.map((post) => {
           return (
-            <div className="row mt-4" key={post.selectedGif}>
-              <div className="col-sm-3"></div>
+            <div key={post.selectedGif}>
               <Post post={post} />
-              <div className="col-sm-3"></div>
             </div>
           );
         })}

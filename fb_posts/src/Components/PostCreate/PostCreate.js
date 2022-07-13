@@ -8,9 +8,14 @@ import Live from "../Images/live.png";
 import Writepost from "../Images/post.png";
 
 export const CreatePostCard = () => {
+
+
   const { post, setPost } = useContext(PostContext);
+
   const [postText, setPostText] = useState("");
+
   const [selectedGif, setSelectedGif] = useState("");
+
   const [results, setResults] = useState([]);
 
   const gifFetch = async (e) => {
@@ -58,9 +63,9 @@ export const CreatePostCard = () => {
           <></>
         )}
         &nbsp;
-        <img className="gif_img" src={Logo} alt="" />
+        <img className="gif_img" src={Logo} alt="gif_img" />
         GIF
-        <ul className="dropdown-menu" id="dropdown-menu">
+        <ul className="dropdown-menu">
           <li>
             <input
               className="gifInput"
